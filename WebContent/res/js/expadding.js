@@ -110,16 +110,16 @@ function createMatchingQuestions(isReview){
 	//
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 1
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var items = xmlDoc.getElementsByTagName("matching")[0].getElementsByTagName("items")[0].getElementsByTagName("item");
 			//生成问题并放到各列
@@ -229,21 +229,17 @@ function createMatchingQuestions(isReview){
 //初始化拼写
 function initSpelling(){
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		async:false,
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 1
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
-			//获得题目数组
-			var spellingItems = xmlDoc.getElementsByTagName("spelling")[0].getElementsByTagName("items")[0].getElementsByTagName("item");
-			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var spellingItems = xmlDoc.getElementsByTagName("spelling")[0].getElementsByTagName("items")[0].getElementsByTagName("item");
 			//获得拼写题数
@@ -266,16 +262,16 @@ function createSpellingQues(){
 	
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 1
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var spellingItems = xmlDoc.getElementsByTagName("spelling")[0].getElementsByTagName("items")[0].getElementsByTagName("item");
 			//播放单词
@@ -406,16 +402,16 @@ function checkSpellingAnswer(){
 			
 			//生成题目
 			$.ajax({
-				url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+				url:"/voc_exer/getXmlMaterial",
 				type:"post",
 				dataType:"json",
 				data:{
-					serial_number:serialNumber,
+					serialNumber:serialNumber,
 					part: 1
 				},
 				success:function(data,textStatus){
 					//加载并解析xml文件
-					var xmlDoc = parseXmlString(data);
+					var xmlDoc = parseXmlString(data.xml);
 					//获得题目数组
 					var items = xmlDoc.getElementsByTagName("spelling")[0].getElementsByTagName("items")[0].getElementsByTagName("item");
 					//获得答案
@@ -534,16 +530,16 @@ function showEndInfo(){
 function createCompletionQues(isReview){
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 1
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 	
 			//获得题目数组
 			var items = xmlDoc.getElementsByTagName("completion")[0].getElementsByTagName("items")[0].getElementsByTagName("item");
@@ -759,13 +755,13 @@ function setUserAnswString(){
 
 function saveExpadding(){
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/save_expadding",
+		url:"/voc_exer/saveExpadding",
 		type:"post",
 		dataType:"json",
 		data:{
-			user_id: userId,
-			serial_number: serialNumber,
-			user_answ_string: userAnswString
+			userId: userId,
+			serialNumber: serialNumber,
+			userAnswString: userAnswString
 		},
 		success:function(data,textStatus){
 			if(!data){

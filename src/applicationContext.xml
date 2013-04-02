@@ -18,4 +18,29 @@
 	  	</property>
 	</bean>
 	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- <property name="mappingResources">
+			<list>
+				<value></value>
+			</list>
+		</property> -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="expaddingDao" class="dao.impl.ExpaddingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="expaddingService" class="service.ExpaddingService">
+		<property name="expaddingDao" ref="expaddingDao"></property>
+	</bean>
+	
+	<bean id="expaddingAction" class="action.ExpaddingAction">
+		<property name="expaddingService" ref="expaddingService"></property>
+	</bean>
 </beans>

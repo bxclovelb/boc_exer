@@ -4,12 +4,26 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 	
 <struts>
-	<package name="vocExer" namespace="/" extends="struts-default">
-		<action name="showExpadding" class="action.ShowAction" method="showExpadding">
-			<result type="dispatcher">
+	<package name="vocExer" namespace="/" extends="json-default">
+		<action name="showExpadding" class="action.ExpaddingAction" 
+			method="showExpadding">
+			<result name="success" type="dispatcher">
 				/WEB-INF/jsp/voc_exer_expadding_v.jsp
 			</result>
 		</action>
 		
+		<action name="getXmlMaterial" class="action.ExpaddingAction" 
+			method="getXmlMaterial">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
+		
+		<action name="saveExpadding" class="action.ExpaddingAction" 
+			method="saveExpadding">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
 	</package>
 </struts>
