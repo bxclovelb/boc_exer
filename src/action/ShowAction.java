@@ -3,7 +3,7 @@ package action;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ShowAction extends ActionSupport{
-	private Stirng userId;
+	private String userId;
 	private String serialNumber;
 	private int isReview;
 	private int part;
@@ -19,10 +19,10 @@ public class ShowAction extends ActionSupport{
 	
 
 
-	public Stirng getUserId() {
+	public String getUserId() {
 		return userId;
 	}
-	public void setUserId(Stirng userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 	public String getSerialNumber() {

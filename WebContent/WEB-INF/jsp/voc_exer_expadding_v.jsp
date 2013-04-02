@@ -6,36 +6,36 @@
 <meta charset="utf-8">
 <title>冰果英语：词汇增强</title>
 
-<script src="/voc_exe/res/js/jquery-1.8.2.min.js" type="text/javascript"></script>
-<script src="/voc_exe/res/js/jquery-ui-1.9.2.custom.min.js"
+<script src="/voc_exer/res/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="/voc_exer/res/js/jquery-ui-1.9.2.custom.min.js"
 	type="text/javascript"></script>
-<script type="text/javascript" src="/voc_exe/res/js/jquery.jplayer.min.js"></script>
-<script src="/voc_exe/res/js/expadding.js" type="text/javascript"></script>
-<script src="/voc_exe/res/js/commons.js" type="text/javascript"></script>
-<script src="/voc_exe/res/js/turner.js" type="text/javascript"></script>
+<script type="text/javascript" src="/voc_exer/res/js/jquery.jplayer.min.js"></script>
+<script src="/voc_exer/res/js/expadding.js" type="text/javascript"></script>
+<script src="/voc_exer/res/js/commons.js" type="text/javascript"></script>
+<script src="/voc_exer/res/js/turner.js" type="text/javascript"></script>
 
-<link href="/voc_exe/res/css/jquery-ui-1.10.1.custom.min.css"
+<link href="/voc_exer/res/css/jquery-ui-1.10.1.custom.min.css"
 	rel="stylesheet">
-<link href="/voc_exe/res/css/bootstrap.min.css" rel="stylesheet">
-<link href="/voc_exe/res/css/expadding.css" rel="stylesheet">
-<link href="/voc_exe/res/css/whole.css" rel="stylesheet">
+<link href="/voc_exer/res/css/bootstrap.min.css" rel="stylesheet">
+<link href="/voc_exer/res/css/expadding.css" rel="stylesheet">
+<link href="/voc_exer/res/css/whole.css" rel="stylesheet">
  
 
 <!--[if IE 6]>
-	<link href="/voc_exe/res/css/ie6.min.css" rel="stylesheet">
+	<link href="/voc_exer/res/css/ie6.min.css" rel="stylesheet">
 <![endif]-->
     
 </head>
 <body>
 	<!-- navbar -->
-	<%@include file="voc_exe_navbar_v.jsp" %>
+	<%@include file="voc_exer_navbar_v.jsp" %>
 	<!-- navbar end -->
 	
 	<div class="container"
 		style="margin-top: 40px; z-index: 1; border: 1px solid gray">
 		
 		<!-- include header start -->
-		<%@include file="voc_exe_head_v.jsp" %>
+		<%@include file="voc_exer_head_v.jsp" %>
 		<!-- include header end -->
 		
 		<div class="row-fluid div-body" id="div_body">
@@ -51,21 +51,21 @@
 			
 			<!-- spelling start -->
 			<div id="div_spelling" 
-				style="display: none; margin-top: 30px;margin-left: 30px;margin-right: 30px; border-radius: 10px 10px 10px 10px; background: url(/voc_exe/res/img/bg_body.jpg) repeat-x scroll 0% 0% transparent; height: 550px;">
+				style="display: none; margin-top: 30px;margin-left: 30px;margin-right: 30px; border-radius: 10px 10px 10px 10px; background: url(/voc_exer/res/img/bg_body.jpg) repeat-x scroll 0% 0% transparent; height: 550px;">
 				<div id="div_section_left" style="padding-left: 30px;width:400px" class="span6">
 					<div id="div_listen" style="margin-top: 60px">
 						<div id="jquery_jplayer"></div>
-						<img src="/voc_exe/res/img/headset.png"> <span
+						<img src="/voc_exer/res/img/headset.png"> <span
 							style="margin-left: 20px" id="span_balls"> <img
-							src="/voc_exe/res/img/ball.png"> <img
-							src="/voc_exe/res/img/ball.png"> <img
-							src="/voc_exe/res/img/ball.png">
+							src="/voc_exer/res/img/ball.png"> <img
+							src="/voc_exer/res/img/ball.png"> <img
+							src="/voc_exer/res/img/ball.png">
 						</span>
 					</div>
 					<div id="div_input"
 						style="margin-top: 30px; background-color: #c8e3f9; height: 100px; width: 350px; border-radius: 10px 10px">
 						<img style="margin-top: 18px"
-							src="/voc_exe/res/img/pen.png"> <input type="button"
+							src="/voc_exer/res/img/pen.png"> <input type="button"
 							onclick="createSpellingQues();"
 							style="margin-left: 50px; width: 150px" value="开始"
 							class="btn-large btn-info">
@@ -73,7 +73,7 @@
 					<div id="div_question" style="margin-top: 30px;background-color: #c8e3f9;width:350px;border-radius: 5px 5px;display:none"></div>
 					<div id="div_info" style="width:350px;position:absolute;top:550px">
 						<div
-							style="height: 20px; margin-top: 200px; background: url(/voc_exe/res/img/info.png); padding: 10px">
+							style="height: 20px; margin-top: 200px; background: url(/voc_exer/res/img/info.png); padding: 10px">
 							请点击开始按钮开始听写。</div>
 						<div style="height: 20px; margin-top: 10px;"></div>
 					</div>

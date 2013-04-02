@@ -52,7 +52,7 @@ $(function(){
 //初始化播放器
 function initPlayer(){
 	$("#jquery_jplayer").jPlayer({
-		swfPath:"/voc_exe/res/js",
+		swfPath:"/voc_exer/res/js",
 		supplied:"mp3"
 	});
 }
@@ -60,7 +60,7 @@ function initPlayer(){
 //获得expadding答案数组(复习)
 function getExpaddingAnswers(type){
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_contents",
+		url:"/voc_exer/index.php/voc_exer_c/get_contents",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -110,7 +110,7 @@ function createMatchingQuestions(isReview){
 	//
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -229,7 +229,7 @@ function createMatchingQuestions(isReview){
 //初始化拼写
 function initSpelling(){
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		async:false,
 		dataType:"json",
@@ -266,7 +266,7 @@ function createSpellingQues(){
 	
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -289,13 +289,13 @@ function createSpellingQues(){
 			var table = $("<table></table>");
 			var tr = $("<tr></tr>");
 			var td0 = $("<td style='width:70px'></td>");
-			td0.append("<span><img src='/voc_exe/res/img/pen.png' style='margin-top:18px'></img></span>");
+			td0.append("<span><img src='/voc_exer/res/img/pen.png' style='margin-top:18px'></img></span>");
 			tr.append(td0);
 			var td1 = $("<td style=''></td>");
 			td1.append("<span style='margin-left:5px'><input id='input_spelling' type='text' style='height:32px;margin-top:10px;' placeholder='alphabet : "+alphabet+"'></span>");
 			tr.append(td1);
 			var td2 = $("<td style=''></td>");
-			td2.append("<span style='margin-top:10px'><a href='###' onclick='checkSpellingAnswer();'><img src='/voc_exe/res/img/enter.png' style='margin-left:5px;height:42px'></img></a></span>");
+			td2.append("<span style='margin-top:10px'><a href='###' onclick='checkSpellingAnswer();'><img src='/voc_exer/res/img/enter.png' style='margin-left:5px;height:42px'></img></a></span>");
 			tr.append(td2);
 			table.append(tr);
 			divInput.append(table);
@@ -322,7 +322,7 @@ function showSpellingAnsws(){
 	
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -378,7 +378,7 @@ function playSound(filename){
 		aBall.click(function(){
 			playSound(filename);
 		});
-		aBall.append("<img src='/voc_exe/res/img/ball.png'>");
+		aBall.append("<img src='/voc_exer/res/img/ball.png'>");
 		$("#span_balls").append(aBall);
 	}
 }
@@ -387,7 +387,7 @@ function playSound(filename){
 function updateInfo(){
 	var divInfo = $("#div_info");
 	divInfo.html("");
-	divInfo.append("<div style='height:20px;margin-top: 200px;background:url(/voc_exe/res/img/info.png);padding:10px'>您还有"+ballNum+"次听的机会和"+spellingNum+"次输入的机会。</div><div style='height:20px;margin-top:10px;'>"+(spellingNo+1)+"/"+spellingsCount+"</div>");
+	divInfo.append("<div style='height:20px;margin-top: 200px;background:url(/voc_exer/res/img/info.png);padding:10px'>您还有"+ballNum+"次听的机会和"+spellingNum+"次输入的机会。</div><div style='height:20px;margin-top:10px;'>"+(spellingNo+1)+"/"+spellingsCount+"</div>");
 }
 
 //检查答案
@@ -406,7 +406,7 @@ function checkSpellingAnswer(){
 			
 			//生成题目
 			$.ajax({
-				url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+				url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 				type:"post",
 				dataType:"json",
 				data:{
@@ -485,7 +485,7 @@ function checkSpellingAnswer(){
 
 //获得正确答案的div
 function getRightAnswerDiv(ifRight,answer,filename){
-	var img = $("<img src='/voc_exe/res/img/headphone.png'/>");
+	var img = $("<img src='/voc_exer/res/img/headphone.png'/>");
 	var aImg = $("<a href='###' style='margin-left:10px'></a>"); 
 	if(ifRight){
 		aImg.addClass("right");
@@ -520,21 +520,21 @@ function showEndInfo(){
 	//单词输入
 	var divInput = $("#div_input");
 	divInput.html("");
-	divInput.append("<img src='/voc_exe/res/img/pen.png' style='margin-top:18px;vertical-align:bottom'></img>");
+	divInput.append("<img src='/voc_exer/res/img/pen.png' style='margin-top:18px;vertical-align:bottom'></img>");
 	divInput.append("<span style='font-size:30pt;margin-left:10px'>拼写练习结束!</span>");
 	//题目
 	$("#div_question").hide();
 	//提示信息
 	var divInfo = $("#div_info");
 	divInfo.html("");
-	divInfo.append("<div style='height:20px;margin-top:200px;background:url(/voc_exe/res/img/info.png);padding:10px'>练习结束，点击右上角菜单进入下一部分词汇练习。</div><div style='height:20px;margin-top:10px;'></div>");
+	divInfo.append("<div style='height:20px;margin-top:200px;background:url(/voc_exer/res/img/info.png);padding:10px'>练习结束，点击右上角菜单进入下一部分词汇练习。</div><div style='height:20px;margin-top:10px;'></div>");
 }
 
 //生成选词填空题目
 function createCompletionQues(isReview){
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -693,7 +693,7 @@ function nextStep(){
 	}else if(currStep == 4){//转向第四步，其他页面
 		setUserAnswString();
 		saveExpadding();
-		window.location.href = "/voc_exe/index.php/voc_exe_c/show_consolidating/"+userId+"/"+serialNumber;
+		window.location.href = "/voc_exer/index.php/voc_exer_c/show_consolidating/"+userId+"/"+serialNumber;
 	}else if(currStep == 10){//转向第10步（复习）
 		$("#div_spelling").addClass('active');
 		$("#div_direction").html("");
@@ -709,7 +709,7 @@ function nextStep(){
 		
 		getExpaddingAnswers(2);
 	}else if(currStep == 12){//转向第12步（复习） ,转向其他页面
-		window.location = "/voc_exe/index.php/voc_exe_c/show_consolidating/"+userId+"/"+serialNumber+"/1";
+		window.location = "/voc_exer/index.php/voc_exer_c/show_consolidating/"+userId+"/"+serialNumber+"/1";
 	}
 }
 
@@ -759,7 +759,7 @@ function setUserAnswString(){
 
 function saveExpadding(){
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/save_expadding",
+		url:"/voc_exer/index.php/voc_exer_c/save_expadding",
 		type:"post",
 		dataType:"json",
 		data:{

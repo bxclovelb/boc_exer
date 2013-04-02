@@ -7,7 +7,7 @@
 	<package name="vocExer" namespace="/" extends="struts-default">
 		<action name="showExpadding" class="action.ShowAction" method="showExpadding">
 			<result type="dispatcher">
-				/WEB-INF/jsp/voc_exe_expadding_v.jsp
+				/WEB-INF/jsp/voc_exer_expadding_v.jsp
 			</result>
 		</action>
 		

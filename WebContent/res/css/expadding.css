@@ -8,7 +8,7 @@
 
 .div-matching-question-head {
 	padding: 8px;
-	background: url('/voc_exe/res/img/bg_green.jpg') repeat-x;
+	background: url('/voc_exer/res/img/bg_green.jpg') repeat-x;
 	border-radius: 10px 10px;
 	font-size: 18pt;
 }
@@ -46,7 +46,7 @@
 
 .div-completion-question-head {
 	padding-left: 15px;
-	background: url('/voc_exe/res/img/bg_green.jpg') repeat-x;
+	background: url('/voc_exer/res/img/bg_green.jpg') repeat-x;
 	border-radius: 10px 10px;
 	font-size: 12pt;
 	height:40px;
@@ -56,7 +56,7 @@
 .div-completion-question-head-short {
 	padding-left: 15px;
 	padding-top: 1px;
-	background: url('/voc_exe/res/img/bg_green.jpg') repeat-x;
+	background: url('/voc_exer/res/img/bg_green.jpg') repeat-x;
 	border-radius: 10px 10px;
 	font-size: 12pt;
 	height:40px;

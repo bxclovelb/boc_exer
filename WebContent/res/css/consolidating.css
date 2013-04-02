@@ -1,7 +1,7 @@
 #div_consolidating {
 	margin: 30px ;
 	border:1px solid gray;
-	background-image: url(/voc_exe/res/img/blue_flow.jpg);
+	background-image: url(/voc_exer/res/img/blue_flow.jpg);
 }
 
 .div-consolidating-head {
@@ -52,8 +52,8 @@
 	margin-top:40px;
 	height:40px;
 	width:430px;
-	background:url(/voc_exe/res/img/freq_left_unselect.png) no-repeat;
-	_background:url(/voc_exe/res/img/freq_left_unselect.gif) no-repeat;
+	background:url(/voc_exer/res/img/freq_left_unselect.png) no-repeat;
+	_background:url(/voc_exer/res/img/freq_left_unselect.gif) no-repeat;
 }
 
 .div-freq-left-sents{
@@ -73,8 +73,8 @@
 }
 
 .div-freq-left-hover{
-	background:url(/voc_exe/res/img/freq_left_unselect_2.png) no-repeat;
-	_background:url(/voc_exe/res/img/freq_left_unselect_2.gif) no-repeat;
+	background:url(/voc_exer/res/img/freq_left_unselect_2.png) no-repeat;
+	_background:url(/voc_exer/res/img/freq_left_unselect_2.gif) no-repeat;
 }
 
 .div-freq-right{
@@ -87,8 +87,8 @@
 	height:40px;
 	width:428px;
 	line-height:20px;
-	background:url(/voc_exe/res/img/freq_right_unselect.png) no-repeat;
-	_background:url(/voc_exe/res/img/freq_right_unselect.gif) no-repeat;
+	background:url(/voc_exer/res/img/freq_right_unselect.png) no-repeat;
+	_background:url(/voc_exer/res/img/freq_right_unselect.gif) no-repeat;
 	cursor:pointer;
 }
 
@@ -106,17 +106,17 @@
 	line-height:20px;
 	padding-left:70px;
 	padding-top:10px;
-	background:url(/voc_exe/res/img/freq_right_unselect.png) no-repeat;
-	_background:url(/voc_exe/res/img/freq_right_unselect.gif) no-repeat;
+	background:url(/voc_exer/res/img/freq_right_unselect.png) no-repeat;
+	_background:url(/voc_exer/res/img/freq_right_unselect.gif) no-repeat;
 	cursor:pointer;
 }
 
 .div-freq-right-mean:hover{
-	background:url(/voc_exe/res/img/freq_right_unselect_2.png) no-repeat;
-	_background:url(/voc_exe/res/img/freq_right_unselect_2.gif) no-repeat;
+	background:url(/voc_exer/res/img/freq_right_unselect_2.png) no-repeat;
+	_background:url(/voc_exer/res/img/freq_right_unselect_2.gif) no-repeat;
 }
 
 .div-freq-right-mean-middle:hover{
-	background:url(/voc_exe/res/img/freq_right_unselect_2.png) no-repeat;
-	_background:url(/voc_exe/res/img/freq_right_unselect_2.gif) no-repeat;
+	background:url(/voc_exer/res/img/freq_right_unselect_2.png) no-repeat;
+	_background:url(/voc_exer/res/img/freq_right_unselect_2.gif) no-repeat;
 }

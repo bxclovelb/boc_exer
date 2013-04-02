@@ -1,7 +1,7 @@
 #div_finetuning {
 	margin: 30px;
 	border:1px solid gray;
-	background-image: url(/voc_exe/res/img/blue_flow.jpg);
+	background-image: url(/voc_exer/res/img/blue_flow.jpg);
 }
 
 .div-finetuning-head {
@@ -52,8 +52,8 @@
 	margin-top:40px;
 	height:40px;
 	width:430px;
-	background:url(/voc_exe/res/img/turn_left_unselect.png) no-repeat;
-	_background:url(/voc_exe/res/img/turn_left_unselect.gif) no-repeat;
+	background:url(/voc_exer/res/img/turn_left_unselect.png) no-repeat;
+	_background:url(/voc_exer/res/img/turn_left_unselect.gif) no-repeat;
 }
 
 .div-turn-left-sents{
@@ -72,8 +72,8 @@
 }
 
 .div-turn-left-hover{
-	background:url(/voc_exe/res/img/turn_left_unselect_2.png) no-repeat;
-	_background:url(/voc_exe/res/img/turn_left_unselect_2.gif) no-repeat;
+	background:url(/voc_exer/res/img/turn_left_unselect_2.png) no-repeat;
+	_background:url(/voc_exer/res/img/turn_left_unselect_2.gif) no-repeat;
 }
 
 .div-turn-right{
@@ -86,8 +86,8 @@
 	height:40px;
 	width:428px;
 	line-height:20px;
-	background:url(/voc_exe/res/img/turn_right_unselect.png) no-repeat;
-	_background:url(/voc_exe/res/img/turn_right_unselect.gif) no-repeat;
+	background:url(/voc_exer/res/img/turn_right_unselect.png) no-repeat;
+	_background:url(/voc_exer/res/img/turn_right_unselect.gif) no-repeat;
 	cursor:pointer;
 }
 
@@ -104,16 +104,16 @@
 	line-height:20px;
 	padding-left:70px;
 	padding-top:10px;
-	background:url(/voc_exe/res/img/turn_right_unselect.png) no-repeat;
-	_background:url(/voc_exe/res/img/turn_right_unselect.gif) no-repeat;
+	background:url(/voc_exer/res/img/turn_right_unselect.png) no-repeat;
+	_background:url(/voc_exer/res/img/turn_right_unselect.gif) no-repeat;
 	cursor:pointer;
 }
 
 .div-turn-right-mean:hover{
-	background:url(/voc_exe/res/img/turn_right_unselect_2.png) no-repeat;
-	_background:url(/voc_exe/res/img/turn_right_unselect_2.gif) no-repeat;
+	background:url(/voc_exer/res/img/turn_right_unselect_2.png) no-repeat;
+	_background:url(/voc_exer/res/img/turn_right_unselect_2.gif) no-repeat;
 }
 .div-turn-right-mean-middle:hover{
-	background:url(/voc_exe/res/img/turn_right_unselect_2.png) no-repeat;
-	_background:url(/voc_exe/res/img/turn_right_unselect_2.gif) no-repeat;
+	background:url(/voc_exer/res/img/turn_right_unselect_2.png) no-repeat;
+	_background:url(/voc_exer/res/img/turn_right_unselect_2.gif) no-repeat;
 }
