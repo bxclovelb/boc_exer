@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<consolidating>
+	<multiple_meaning>
+		<direction>
+			<section>consolidating</section>
+			<part>muti-meaning words</part>
+			<type>1</type>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>smoke</word>
+				<a>察觉</a>
+				<b>烟</b>
+				<c>熏制</c>
+				<d>抽烟</d>
+			</item>
+			<item id='2'>
+				<word>shout</word>
+				<a>欢呼</a>
+				<b>喊叫</b>
+				<c>大叫</c>
+				<d>喊叫声</d>
+			</item>
+			<item id='3'>
+				<word>baby</word>
+				<a>男人</a>
+				<b>小妞</b>
+				<c>特殊差事</c>
+				<d>婴儿</d>
+			</item>
+			<item id='4'>
+				<word>fine</word>
+				<a>保守的</a>
+				<b>好的</b>
+				<c>高级的</c>
+				<d>优秀的</d>
+			</item>
+			<item id='5'>
+				<word>table</word>
+				<a>磁带</a>
+				<b>桌子</b>
+				<c>表格</c>
+				<d>乘法表</d>
+			</item>
+			<item id='6'>
+				<word>take</word>
+				<a>脱下</a>
+				<b>带走</b>
+				<c>教授</c>
+				<d>需要</d>
+			</item>
+			<item id='7'>
+				<word>underground</word>
+				<a>模糊的</a>
+				<b>地铁</b>
+				<c>地下的</c>
+				<d>秘密的</d>
+			</item>
+			<item id='8'>
+				<word>fish</word>
+				<a>肉</a>
+				<b>捕鱼</b>
+				<c>掏出</c>
+				<d>寻找</d>
+			</item>
+			<item id='9'>
+				<word>fall</word>
+				<a>上升</a>
+				<b>战败</b>
+				<c>瀑布</c>
+				<d>沦陷</d>
+			</item>
+			<item id='10'>
+				<word>mean</word>
+				<a>奇怪的</a>
+				<b>打算</b>
+				<c>意味着</c>
+				<d>导致</d>
+			</item>
+		</items>
+	</multiple_meaning>
+	<multiple_meaning type='2'>
+		<direction>
+			<section>consolidating</section>
+			<part>muti-meaning words</part>
+			<type>2</type>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>want</word>
+				<body>People often take casual jobs in catering for [[want]] of any
+					alternative.
+				</body>
+				<a>需要(但缺乏)的东西</a>
+				<b>(食物,金钱,衣服等的)匮乏;贫困</b>
+				<c>想要(某物)</c>
+				<d>要求(某人)到来;要求与(某人)谈话;要(某人)到某地</d>
+			</item>
+			<item id='2'>
+				<word>sweet</word>
+				<body>Goodnight, Becky. [[Sweet]] dreams.</body>
+				<a>令人愉悦的，惬意的；使人满足的</a>
+				<b>芳香的，芬芳的</b>
+				<c>悦耳的，动听的</c>
+				<d>（餐后的）甜食，甜点</d>
+			</item>
+			<item id='3'>
+				<word>green</word>
+				<body>She looked [[green]] this morning and was sent to hospital.
+				</body>
+				<a>脸色苍白的，不健康的</a>
+				<b>绿色的，（水果）青绿色的，尚不成熟的</b>
+				<c>草地</c>
+				<d>绿色</d>
+			</item>
+			<item id='4'>
+				<word>mean</word>
+				<body>He was [[mean]] to those who worked for him but generous to
+					those who he hardly knew.
+				</body>
+				<a>吝啬的</a>
+				<b>平均的</b>
+				<c>意谓</c>
+				<d>刻薄的</d>
+			</item>
+			<item id='5'>
+				<word>feel</word>
+				<body>The experience of rape can change how a woman [[feels]] about
+					her body.
+				</body>
+				<a>认为</a>
+				<b>感受到</b>
+				<c>感觉</c>
+				<d>感觉是</d>
+			</item>
+			<item id='6'>
+				<word>fall</word>
+				<body>There is a sharp [[fall]] in the birth rate in European
+					countries.
+				</body>
+				<a>减少</a>
+				<b>跌倒，下跌</b>
+				<c>垮台，失败</c>
+				<d>跌落，下降</d>
+			</item>
+			<item id='7'>
+				<word>fine</word>
+				<body>If you want to use cheese instead of chicken, that's [[fine]]
+					.
+				</body>
+				<a>令人满意的；好的</a>
+				<b>晴朗的</b>
+				<c>处以罚金</c>
+				<d>细小的</d>
+			</item>
+			<item id='8'>
+				<word>story</word>
+				<body>The paper splashed the [[story]] on page one.</body>
+				<a>（报纸或广播中的）新闻报道</a>
+				<b>（电影、戏剧、书的）故事情节</b>
+				<c>（尤指编造的）借口，遁词</c>
+				<d>传闻，传说，谣传</d>
+			</item>
+			<item id='9'>
+				<word>fish</word>
+				<body>Will you like a little more [[fish]]?</body>
+				<a>鱼肉</a>
+				<b>钓鱼</b>
+				<c>寻找</c>
+				<d>掏出</d>
+			</item>
+			<item id='10'>
+				<word>keep</word>
+				<body>He scarecely to earns enough to [[keep]] himself and his
+					family.
+				</body>
+				<a>照顾，供养</a>
+				<b>使［某人或某物］保持［某种状态］</b>
+				<c>保护，保卫</c>
+				<d>使（某人）停留于某处</d>
+			</item>
+		</items>
+	</multiple_meaning>
+	<frequently_used_words>
+		<direction>
+			<section>consolidating</section>
+			<part>frequently used words</part>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>mean</word>
+				<items>
+					<item id='1'>
+						<sentence>He's so [[mean]], he won't even buy his wife a birthday
+							present.
+						</sentence>
+						<definition>cruel or not kind</definition>
+					</item>
+					<item id='2'>
+						<sentence>The [[mean]] length of stay in the hospital is 11 days.
+						</sentence>
+						<definition>average</definition>
+					</item>
+					<item id='3'>
+						<sentence>Finding a lump does not necessarily [[mean]] you have
+							cancer.
+						</sentence>
+						<definition>to be a sign that something is true or will happen
+						</definition>
+					</item>
+					<item id='4'>
+						<sentence>Sharon and the others were really [[mean]] to me at
+							school today.
+						</sentence>
+						<definition>cruel and bad-tempered</definition>
+					</item>
+					<item id='5'>
+						<sentence>The [[mean]] of 7, 9, and 14 is found by adding them
+							together and dividing by 3.
+						</sentence>
+						<definition>the average amount, figure, or value</definition>
+					</item>
+					<item id='6'>
+						<sentence>We must find a [[mean]] between hope and despair.
+						</sentence>
+						<definition>a method of doing something which is between two very
+							different methods, and better than either of them
+						</definition>
+					</item>
+				</items>
+			</item>
+			<item id='2'>
+				<word>feel</word>
+				<items>
+					<item id='1'>
+						<sentence>It [[felt]] great to be up in the mountains.</sentence>
+						<definition>to give you a particular physical feeling, especially
+							when you touch or hold something
+						</definition>
+					</item>
+					<item id='2'>
+						<sentence>There was nothing Lucy liked more than the [[feel]] of
+							fur against her skin.
+						</sentence>
+						<definition>the way that something feels when you touch it
+						</definition>
+					</item>
+					<item id='3'>
+						<sentence>When his dad left, he [[felt]] as though his world had
+							turned upside-down.
+						</sentence>
+						<definition>to experience a particular physical feeling or emotion
+						</definition>
+					</item>
+					<item id='4'>
+						<sentence>The earthquake was [[felt]] as far south as San Diego.
+						</sentence>
+						<definition>to notice something that is happening to you,
+							especially something that is touching you
+						</definition>
+					</item>
+					<item id='5'>
+						<sentence>She [[felt]] sure she'd made the right decision.
+						</sentence>
+						<definition>to have a particular opinion, especially one that is
+							based on your feelings, not on facts
+						</definition>
+					</item>
+					<item id='6'>
+						<sentence>The seats look good and have a sturdy [[feel]].
+						</sentence>
+						<definition>a quality that something has that makes you feel or
+							think a particular way about it
+						</definition>
+					</item>
+				</items>
+			</item>
+		</items>
+	</frequently_used_words>
+</consolidating>

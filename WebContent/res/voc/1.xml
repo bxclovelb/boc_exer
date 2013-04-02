@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<expadding>
+	<matching>
+		<direction>
+			<section>expanding</section>
+			<part>matching</part>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>feel</word>
+				<a>认为</a>
+				<b>看见</b>
+				<c>接触</c>
+				<d>落下</d>
+			</item>
+			<item id='2'>
+				<word>thirsty</word>
+				<a>口渴的</a>
+				<b>三十</b>
+				<c>肮脏的</c>
+				<d>热情的</d>
+			</item>
+			<item id='3'>
+				<word>game</word>
+				<a>一场</a>
+				<b>一趟</b>
+				<c>一袋</c>
+				<d>一桶</d>
+			</item>
+			<item id='4'>
+				<word>want</word>
+				<a>要求</a>
+				<b>问候</b>
+				<c>守护</c>
+				<d>骇然</d>
+			</item>
+			<item id='5'>
+				<word>mean</word>
+				<a>导致</a>
+				<b>引起</b>
+				<c>发生</c>
+				<d>展望</d>
+			</item>
+			<item id='6'>
+				<word>fall</word>
+				<a>减少</a>
+				<b>消失</b>
+				<c>增长</c>
+				<d>跟随</d>
+			</item>
+			<item id='7'>
+				<word>story</word>
+				<a>新闻报道</a>
+				<b>封面</b>
+				<c>直线</c>
+				<d>关系</d>
+			</item>
+			<item id='8'>
+				<word>make</word>
+				<a>导致</a>
+				<b>加起来</b>
+				<c>产生</c>
+				<d>提高</d>
+			</item>
+			<item id='9'>
+				<word>shout</word>
+				<a>大叫</a>
+				<b>调查</b>
+				<c>谴责</c>
+				<d>欢呼</d>
+			</item>
+			<item id='10'>
+				<word>take</word>
+				<a>拿着</a>
+				<b>持续</b>
+				<c>指导</c>
+				<d>放弃</d>
+			</item>
+			<item id='11'>
+				<word>keep</word>
+				<a>使保持</a>
+				<b>留下</b>
+				<c>维持</c>
+				<d>坚持</d>
+			</item>
+			<item id='12'>
+				<word>baby</word>
+				<a>小孩</a>
+				<b>大人</b>
+				<c>长者</c>
+				<d>智者</d>
+			</item>
+			<item id='13'>
+				<word>shirt</word>
+				<a>衬衫</a>
+				<b>女裙</b>
+				<c>船</c>
+				<d>绵羊</d>
+			</item>
+			<item id='14'>
+				<word>dear</word>
+				<a>亲爱的</a>
+				<b>仅仅</b>
+				<c>害怕</c>
+				<d>梨子</d>
+			</item>
+			<item id='15'>
+				<word>green</word>
+				<a>绿色的</a>
+				<b>贪婪的</b>
+				<c>简单的</c>
+				<d>高兴的</d>
+			</item>
+			<item id='16'>
+				<word>fine</word>
+				<a>纤细的</a>
+				<b>迷人的</b>
+				<c>可怜的</c>
+				<d>弱智的</d>
+			</item>
+			<item id='17'>
+				<word>sweet</word>
+				<a>甜的</a>
+				<b>咸的</b>
+				<c>酸的</c>
+				<d>辣的</d>
+			</item>
+			<item id='18'>
+				<word>kitchen</word>
+				<a>厨房</a>
+				<b>房间</b>
+				<c>客厅</c>
+				<d>起居室</d>
+			</item>
+			<item id='19'>
+				<word>umbrella</word>
+				<a>雨伞</a>
+				<b>蘑菇</b>
+				<c>扫帚</c>
+				<d>垃圾</d>
+			</item>
+			<item id='20'>
+				<word>underground</word>
+				<a>秘密的</a>
+				<b>理想的</b>
+				<c>下流的</c>
+				<d>地方的</d>
+			</item>
+		</items>
+	</matching>
+	<spelling>
+		<direction>
+			<section>expanding</section>
+			<part>spelling</part>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>baby</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/baby.mp3</media_file>
+				<sentence>He's the [[baby]] of the family.</sentence>
+			</item>
+			<item id='2'>
+				<word>fall</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/fall.mp3</media_file>
+				<sentence>There has been a [[fall]] in oil prices.</sentence>
+			</item>
+			<item id='3'>
+				<word>shout</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/shout.mp3</media_file>
+				<sentence>There's no need to [[shout]]! I can hear you!</sentence>
+			</item>
+			<item id='4'>
+				<word>food</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/food.mp3</media_file>
+				<sentence>The restaurant serves good [[food]] at affordable prices.
+				</sentence>
+			</item>
+			<item id='5'>
+				<word>story</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/story.mp3</media_file>
+				<sentence>'The Observer' ran a [[story]] about the scandal.
+				</sentence>
+			</item>
+			<item id='6'>
+				<word>make</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/make.mp3</media_file>
+				<sentence>Its beautiful beaches [[make]] this a highly popular area
+					with tourists.
+				</sentence>
+			</item>
+			<item id='7'>
+				<word>take</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/take.mp3</media_file>
+				<sentence>Don't [[take]] offence. Roger says things like that to
+					everybody.
+				</sentence>
+			</item>
+			<item id='8'>
+				<word>thirsty</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/thirsty.mp3</media_file>
+				<sentence>Can I have a glass of water? I'm really [[thirsty]].
+				</sentence>
+			</item>
+			<item id='9'>
+				<word>sweet</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/sweet.mp3</media_file>
+				<sentence>Revenge is [[sweet]].</sentence>
+			</item>
+			<item id='10'>
+				<word>game</word>
+				<media_file>http://www.bingoenglish.com/mediafile/voice_mp3/spelling/game.mp3</media_file>
+				<sentence>The crossword puzzle is the most popular word [[game]] in
+					the world.
+				</sentence>
+			</item>
+		</items>
+	</spelling>
+	<completion>
+		<direction>
+			<section>expanding</section>
+			<part>completion</part>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>fine</word>
+				<body>Many people regard Beethoven's fifth symphony as his
+					[[finest]]
+					work.
+				</body>
+				<a>finest</a>
+				<b>highest</b>
+				<c>last</c>
+				<d>most</d>
+			</item>
+			<item id='2'>
+				<word>table</word>
+				<body>I've booked a [[table]] for two for 8 o'clock.</body>
+				<a>table</a>
+				<b>tablet</b>
+				<c>tab</c>
+				<d>taboo</d>
+			</item>
+			<item id='3'>
+				<word>take</word>
+				<body>Are you [[taking]] French next year?</body>
+				<a>taking</a>
+				<b>working</b>
+				<c>matching</c>
+				<d>examing</d>
+			</item>
+			<item id='4'>
+				<word>fish</word>
+				<body>Dad really loves to [[fish]].</body>
+				<a>fish</a>
+				<b>go</b>
+				<c>move</c>
+				<d>decorate</d>
+			</item>
+			<item id='5'>
+				<word>shout</word>
+				<body>My brother [[shouted]] in pain as the ball hit him.</body>
+				<a>shouted</a>
+				<b>addicted</b>
+				<c>barked</c>
+				<d>lined</d>
+			</item>
+			<item id='6'>
+				<word>baby</word>
+				<body>It is a [[baby]] elephant.</body>
+				<a>baby</a>
+				<b>husband</b>
+				<c>scholar</c>
+				<d>tale</d>
+			</item>
+			<item id='7'>
+				<word>game</word>
+				<body>The team of Graf leads, two [[games]] to one.</body>
+				<a>games</a>
+				<b>times</b>
+				<c>classes</c>
+				<d>rates</d>
+			</item>
+			<item id='8'>
+				<word>want</word>
+				<body>I [[want]] you to find out what they're planning.</body>
+				<a>want</a>
+				<b>wait</b>
+				<c>walk</c>
+				<d>wag</d>
+			</item>
+			<item id='9'>
+				<word>knife</word>
+				<body>She put a [[ knife]] to his throat to frighten him into
+					silence.
+				</body>
+				<a>knife</a>
+				<b>kit</b>
+				<c>kite</c>
+				<d>knot</d>
+			</item>
+			<item id='10'>
+				<word>smoke</word>
+				<body>He went outside for a quiet [[smoke]].</body>
+				<a>smoke</a>
+				<b>study</b>
+				<c>shift</c>
+				<d>shave</d>
+			</item>
+		</items>
+	</completion>
+</expadding>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<finetuning>
+	<word_partnership type='3'>
+		<direction>
+			<section>finetuning</section>
+			<part>word partnership</part>
+			<type>3</type>
+			<left_banner>修饰语</left_banner>
+			<right_banner>名词</right_banner>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>kitchen</word>
+				<blank>kitchen</blank>
+				<match>clean, domestic, fully-fitted, shared</match>
+			</item>
+			<item id='2'>
+				<word>shirt</word>
+				<blank>shirt</blank>
+				<match>pik, baggy, collarless, fresh</match>
+			</item>
+			<item id='3'>
+				<word>underground</word>
+				<blank>underground</blank>
+				<match> London, new, deep, Velvet</match>
+			</item>
+			<item id='4'>
+				<word>make</word>
+				<blank>make</blank>
+				<match> a different, a famous</match>
+			</item>
+			<item id='5'>
+				<word>dinner</word>
+				<blank>dinner</blank>
+				<match>big, chicken, intimate, leisurely</match>
+			</item>
+			<item id='6'>
+				<word>knife</word>
+				<blank>knife</blank>
+				<match> pocket, sharp, blunt, kitchen</match>
+			</item>
+			<item id='7'>
+				<word>smoke</word>
+				<blank>smoke</blank>
+				<match>cigarette, choking, puff, cigar</match>
+			</item>
+			<item id='8'>
+				<word>umbrella</word>
+				<blank>umbrella</blank>
+				<match>beach, moral, nuclear, black</match>
+			</item>
+			<item id='9'>
+				<word>feel</word>
+				<blank>feel</blank>
+				<match> relaxed, real, modern, good</match>
+			</item>
+			<item id='10'>
+				<word>meal</word>
+				<blank>meal</blank>
+				<match> tasty, meagre, heavy, healthy</match>
+			</item>
+		</items>
+	</word_partnership>
+	<word_partnership type='9'>
+		<direction>
+			<section>finetuning</section>
+			<part>word partnership</part>
+			<type>9</type>
+			<left_banner>动词</left_banner>
+			<right_banner>宾词</right_banner>
+		</direction>
+		<items>
+			<item id='1'>
+				<word>smoke</word>
+				<blank>cigar, cigarette</blank>
+				<match>smoke</match>
+			</item>
+			<item id='2'>
+				<word>knife</word>
+				<blank>person, cabdrivers, she, boy</blank>
+				<match>knife</match>
+			</item>
+			<item id='3'>
+				<word>feel</word>
+				<blank>a need, his pocket, the force</blank>
+				<match>feel</match>
+			</item>
+			<item id='4'>
+				<word>keep</word>
+				<blank>a record, diary, house, an account</blank>
+				<match>keep</match>
+			</item>
+			<item id='5'>
+				<word>eat</word>
+				<blank> petrol, fruit, time, food</blank>
+				<match>eat</match>
+			</item>
+			<item id='6'>
+				<word>mean</word>
+				<blank> trouble, business, nothing, mischief</blank>
+				<match>mean</match>
+			</item>
+			<item id='7'>
+				<word>make</word>
+				<blank> a remark, a donation, a visit, an appointment</blank>
+				<match>make</match>
+			</item>
+			<item id='8'>
+				<word>take</word>
+				<blank>action, decision, care, notice</blank>
+				<match>take</match>
+			</item>
+		</items>
+	</word_partnership>
+</finetuning>

@@ -1,0 +1,17 @@
+body {
+	background: url('/voc_exe/res/img/cloudsbg.jpg') repeat-x;
+}
+
+.div-head {
+	background: url('/voc_exe/res/img/bg_head.jpg');
+}
+
+.div-body {
+	background-color: white;
+}
+
+
+.message{
+	display:none;
+	border: 2px solid #5c9ccc;
+}

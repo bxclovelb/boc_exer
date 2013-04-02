@@ -1,0 +1,67 @@
+#div_result {
+	margin: 20px;
+}
+
+.div-result-body {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.img-content{
+	vertical-align:bottom;
+}
+
+.strong-content{
+	margin-left:30px;
+	font-size:15pt;
+}
+
+.div-info-body{
+	margin-top:20px;
+	margin-left:100px;
+	margin-right:100px;
+	padding-top:20px;
+	padding-left:55px;
+	padding-right:55px;
+	padding-bottom:1px;
+	background-color: white;
+}
+
+.div-word-body{
+	margin-top:20px;
+	height:300px;
+}
+
+.td-head{
+	background-color:#eeeeee;
+}
+
+.div-the-word{
+	border-radius:10px 10px;
+	height:40px;
+	cursor:pointer;
+	margin-top:10px;
+}
+
+.div-the-word-left{
+	border-radius:10px 0px 0px 10px;
+	float:left;
+	height:30px;
+	width:65%;
+	line-height:20px;
+	padding-top:10px;
+	font-size:13pt;
+	background-color:#dddddd;
+	background-image:url('/voc_exe/res/img/gray.png');
+}
+
+.div-the-word-right{
+	border-radius:0px 10px 10px 0px;
+	float:left;
+	height:30px;
+	width:35%;
+	padding-top:10px;
+	font-size:11pt;
+	background-color:#fbd58d;
+	background-image:url('/voc_exe/res/img/button_orange.png');
+}

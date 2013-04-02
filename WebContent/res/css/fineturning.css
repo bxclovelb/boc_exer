@@ -1,0 +1,119 @@
+#div_finetuning {
+	margin: 30px;
+	border:1px solid gray;
+	background-image: url(/voc_exe/res/img/blue_flow.jpg);
+}
+
+.div-finetuning-head {
+	margin-top:1px;
+	margin-left:10px;
+	margin-right:30px;
+}
+
+.div-finetuning-head input{
+	float:right;
+}
+
+.div-finetuning-body {
+	margin-top:10px;
+	margin-bottom:10px;
+	height:500px;
+	width:100%
+}
+
+.div-finetuning-body-left {
+	float:left;
+	margin-left:10px;
+	_margin-left:5px;
+}
+
+.div-finetuning-body-left-head{
+	color:white;
+	font-size:20pt;
+	margin-bottom:20px;
+	border-bottom:1px solid #dddddd;
+	padding:10px
+}
+
+.div-finetuning-body-right {
+	float:left;
+	margin-right:10px;
+}
+
+.div-finetuning-body-right-head{
+	color:white;
+	font-size:20pt;
+	margin-bottom:20px;
+	border-bottom:1px solid #dddddd;
+	padding:10px
+}
+
+.div-turn-left{
+	margin-top:40px;
+	height:40px;
+	width:430px;
+	background:url(/voc_exe/res/img/turn_left_unselect.png) no-repeat;
+	_background:url(/voc_exe/res/img/turn_left_unselect.gif) no-repeat;
+}
+
+.div-turn-left-sents{
+	line-height:20px;
+	margin-left:15px;
+	width:350px;
+	height:40px;
+}
+
+.div-turn-left-sents-middle{
+	line-height:20px;
+	margin-left:15px;
+	width:350px;
+	height:30px;
+	padding-top:10px;
+}
+
+.div-turn-left-hover{
+	background:url(/voc_exe/res/img/turn_left_unselect_2.png) no-repeat;
+	_background:url(/voc_exe/res/img/turn_left_unselect_2.gif) no-repeat;
+}
+
+.div-turn-right{
+	margin-top:40px;
+	height:40px;
+	width:428px;
+}
+
+.div-turn-right-mean{
+	height:40px;
+	width:428px;
+	line-height:20px;
+	background:url(/voc_exe/res/img/turn_right_unselect.png) no-repeat;
+	_background:url(/voc_exe/res/img/turn_right_unselect.gif) no-repeat;
+	cursor:pointer;
+}
+
+.div-turn-right-mean div{
+	height:40px;
+	width:345px;
+	line-height:20px;
+	padding-left:70px;
+}
+
+.div-turn-right-mean-middle{
+	height:30px;
+	width:358px;
+	line-height:20px;
+	padding-left:70px;
+	padding-top:10px;
+	background:url(/voc_exe/res/img/turn_right_unselect.png) no-repeat;
+	_background:url(/voc_exe/res/img/turn_right_unselect.gif) no-repeat;
+	cursor:pointer;
+}
+
+.div-turn-right-mean:hover{
+	background:url(/voc_exe/res/img/turn_right_unselect_2.png) no-repeat;
+	_background:url(/voc_exe/res/img/turn_right_unselect_2.gif) no-repeat;
+}
+.div-turn-right-mean-middle:hover{
+	background:url(/voc_exe/res/img/turn_right_unselect_2.png) no-repeat;
+	_background:url(/voc_exe/res/img/turn_right_unselect_2.gif) no-repeat;
+}

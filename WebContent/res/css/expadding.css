@@ -1,0 +1,101 @@
+.div-matching-question {
+	margin-top: 25px;
+	padding: 5px;
+	border: 1px solid gray;
+	box-shadow: 5px 5px #ccc;
+	border-radius: 10px 10px;
+}
+
+.div-matching-question-head {
+	padding: 8px;
+	background: url('/voc_exe/res/img/bg_green.jpg') repeat-x;
+	border-radius: 10px 10px;
+	font-size: 18pt;
+}
+
+.div-matching-question-body {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	border-top: 3px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.div-matching-question-body div {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.div-matching-question-body div input {
+	margin-left: 5px;
+	margin-right: 10px;
+	font-size: 13pt;
+	line-height:10px;
+	width:30px
+}
+
+
+.div-completion-question {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid gray;
+	box-shadow: 5px 5px #ccc;
+	border-radius: 10px 10px;
+}
+
+.div-completion-question-head {
+	padding-left: 15px;
+	background: url('/voc_exe/res/img/bg_green.jpg') repeat-x;
+	border-radius: 10px 10px;
+	font-size: 12pt;
+	height:40px;
+	line-height:40px;
+}
+
+.div-completion-question-head-short {
+	padding-left: 15px;
+	padding-top: 1px;
+	background: url('/voc_exe/res/img/bg_green.jpg') repeat-x;
+	border-radius: 10px 10px;
+	font-size: 12pt;
+	height:40px;
+	line-height:19px;
+}
+
+.div-completion-question-body {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 3px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.div-completion-question-body div {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.div-completion-question-body div span {
+	margin-left: 10px;
+	font-size: 13pt;
+	line-height:10px;
+}
+
+.div-completion-question-body div input {
+	margin-left: 5px;
+	margin-right: 10px;
+	font-size: 13pt;
+	line-height:10px;
+	width:30px
+}
+
+input {
+	vertical-align: bottom;
+}
+
+#div_right_answer a.wrong:link {color: red;text-decoration: none;} /*未访问的链接 */
+#div_right_answer a.wrong:visited {color: red;text-decoration: none;} /*已访问的链接*/
+#div_right_answer a.wrong:hover{color: red;text-decoration: none;} /*鼠标在链接上 */
+#div_right_answer a.right:link {color: green;text-decoration: none;} /*未访问的链接 */
+#div_right_answer a.right:visited {color: green;text-decoration: none;} /*已访问的链接*/
+#div_right_answer a.right:hover{color: green;text-decoration: none;} /*鼠标在链接上 */
