@@ -5,25 +5,38 @@
 	
 <struts>
 	<package name="vocExer" namespace="/" extends="json-default">
+		<action name="getXmlMaterial" class="action.CommonAction" 
+			method="getXmlMaterial">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
+	
 		<action name="showExpadding" class="action.ExpaddingAction" 
 			method="showExpadding">
 			<result name="success" type="dispatcher">
 				/WEB-INF/jsp/voc_exer_expadding_v.jsp
 			</result>
 		</action>
-		
-		<action name="getXmlMaterial" class="action.ExpaddingAction" 
-			method="getXmlMaterial">
-			<result name="success" type="json">
-				<param name="root">data</param>
-			</result>
-		</action>
-		
 		<action name="saveExpadding" class="action.ExpaddingAction" 
 			method="saveExpadding">
 			<result name="success" type="json">
 				<param name="root">data</param>
 			</result>
 		</action>
+		
+		<action name="showConsolidating" class="action.ConsolidatingAction" 
+			method="showConsolidating">
+			<result name="success" type="dispatcher">
+				/WEB-INF/jsp/voc_exer_consolidating_v.jsp
+			</result>
+		</action>
+		<action name="saveConsolidating" class="action.ConsolidatingAction" 
+			method="saveConsolidating">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
 	</package>
+	
 </struts>

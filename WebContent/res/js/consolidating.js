@@ -29,7 +29,7 @@ $(function(){
 //获得consolidating答案数组(复习)
 function getConsolidatingAnswers(type){
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_contents",
+		url:"/voc_exer/index.php/voc_exer_c/get_contents",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -71,16 +71,16 @@ function createFrequentlyQues(mode){
 	$("#div_direction").html("<div style='width:70%'><strong style='font-size:15pt;'>词义配对：</strong><span style='font-size:15pt;'>仔细阅读左列中的句子，在右列中找出这个单词在句中的释义，一一配对。用鼠标拖动释义与相对应的句子“对接”。</span></div>");
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 2
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var items = null;
 			if(mode == 0){
@@ -249,7 +249,7 @@ function createFrequentlyQuesReview(mode){
 
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -327,7 +327,7 @@ function createFrequentlyQuesReview2(mode){
 
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -462,12 +462,11 @@ function nextStep(){
 	}else if(currStep == 6){//转向第六步，其他页面
 		setUserAnswString();
 		saveConsolidating();
-		window.location = "/voc_exe/index.php/voc_exe_c/show_finetuning/"+userId+"/"+serialNumber;
 	}else if(currStep == 13){//转向第13步
 		currMode = 1;
 		showRightAnswers();
 	}else if(currStep == 14){//转向第15步，其他页面
-		window.location = "/voc_exe/index.php/voc_exe_c/show_finetuning/"+userId+"/"+serialNumber+"/1";
+		window.location = "/voc_exer/index.php/voc_exer_c/show_finetuning/"+userId+"/"+serialNumber+"/1";
 	}
 }
 
@@ -493,18 +492,19 @@ function setUserAnswString(){
 //保存答案
 function saveConsolidating(){
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/save_consolidating",
+		url:"/voc_exer/saveConsolidating",
 		type:"post",
 		dataType:"json",
 		data:{
-			user_id: userId,
-			serial_number: serialNumber,
-			user_answ_string: userAnswString
+			userId: userId,
+			serialNumber: serialNumber,
+			userAnswString: userAnswString
 		},
 		success:function(data,textStatus){
-			if(!data){
+			if(!data.success){
 				alert("成绩保存失败！请稍后重试。");
 			}
+			window.location = "/voc_exer/showFinetuning?userId="+userId+"&serialNumber="+serialNumber;
 		}
 	});
 }

@@ -2,28 +2,29 @@ package action;
 
 import java.util.Map;
 
+import service.ConsolidatingService;
 import service.ExpaddingService;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class ExpaddingAction extends ActionSupport{
+public class ConsolidatingAction extends ActionSupport{
 	private String userId;
 	private String serialNumber;
 	private int isReview;
 	private String userAnswString;
-	private int part;
 	
-	private ExpaddingService expaddingService;
+	private ConsolidatingService consolidatingService;
 	
 	private Map<String,Object> data;
 	
 	
 	
-	public String showExpadding(){
+	public String showConsolidating(){
+		isReview = 0;
 		return SUCCESS;
 	}
-	public String saveExpadding(){
-		data = expaddingService.saveExpadding(userId,serialNumber,userAnswString);
+	public String saveConsolidating(){
+		data = consolidatingService.saveConsolidating(userId,serialNumber,userAnswString);
 		return SUCCESS;
 	}
 	
@@ -53,17 +54,11 @@ public class ExpaddingAction extends ActionSupport{
 	public void setUserAnswString(String userAnswString) {
 		this.userAnswString = userAnswString;
 	}
-	public int getPart() {
-		return part;
+	public ConsolidatingService getConsolidatingService() {
+		return consolidatingService;
 	}
-	public void setPart(int part) {
-		this.part = part;
-	}
-	public ExpaddingService getExpaddingService() {
-		return expaddingService;
-	}
-	public void setExpaddingService(ExpaddingService expaddingService) {
-		this.expaddingService = expaddingService;
+	public void setConsolidatingService(ConsolidatingService consolidatingService) {
+		this.consolidatingService = consolidatingService;
 	}
 	public Map<String, Object> getData() {
 		return data;

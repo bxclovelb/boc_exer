@@ -32,15 +32,33 @@
 		</property>
 	</bean>
 	
+	<bean id="commonDao" class="dao.impl.CommonDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="commonService" class="service.CommonService">
+		<property name="commonDao" ref="commonDao"></property>
+	</bean>
+	<bean id="commonAction" class="action.CommonAction">
+		<property name="commonService" ref="commonService"></property>
+	</bean>
+	
 	<bean id="expaddingDao" class="dao.impl.ExpaddingDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-	
 	<bean id="expaddingService" class="service.ExpaddingService">
 		<property name="expaddingDao" ref="expaddingDao"></property>
 	</bean>
-	
 	<bean id="expaddingAction" class="action.ExpaddingAction">
 		<property name="expaddingService" ref="expaddingService"></property>
+	</bean>
+	
+	<bean id="consolidatingDao" class="dao.impl.ConsolidatingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="consolidatingService" class="service.ConsolidatingService">
+		<property name="consolidatingDao" ref="consolidatingDao"></property>
+	</bean>
+	<bean id="consolidatingAction" class="action.ConsolidatingAction">
+		<property name="consolidatingService" ref="consolidatingService"></property>
 	</bean>
 </beans>

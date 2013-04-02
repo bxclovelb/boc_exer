@@ -26,28 +26,28 @@
 </head>
 <body>
 	<!-- navbar -->
-		<?php include 'voc_exer_navbar_v.php'; ?>
+		<%@include file="voc_exer_navbar_v.jsp" %> 
 	<!-- navbar end -->
 	
 	<div class="container"
 		style="margin-top: 40px; z-index: 1; border: 1px solid gray;">
 		
 		<!-- include header start -->
-		<?php include 'voc_exer_head_v.php'; ?>
+		<%@include file="voc_exer_head_v.jsp" %>
 		<!-- include header end -->
 		
 		<div class="row-fluid div-body" id="div_body">
-		<?php if ($is_review != 1): ?>
+		<s:if test="isReview == 0" >
 			<div id="div_consolidating_head" class="div-consolidating-head">
 				<input type="button" value="重置" class="btn" style="height:28px" onclick="reset(currStep);">
 			</div>
-		<?php else:?>
+		</s:if>
+		<s:else>
 			<div id="div_consolidating_head" class="div-consolidating-head">
 				<input id="button_right_answer" type="button" value="查看正确答案" class="btn" style="float:right;border:1px solid gray;height:29px" disabled="disabled" onclick="showRightAnswers();">
 				<input id="button_user_answer" type="button" value="查看我的答案" class="btn" style="float:right;margin-right:5px;border:1px solid gray;height:29px" onclick="showUserAnswers();">
 			</div>
-		<?php endif;?>
-				
+		</s:else>		
 			<!-- consolidating start -->
 			<div id="div_consolidating" class="active">
 				<div id="div_consolidating_body" class="div-consolidating-body">
@@ -60,9 +60,9 @@
 		</div>
 	</div>
 	<form>
-		<input id="hidden_user_id" type="hidden" value="<?= $user_id?>">
-		<input id="hidden_serial_number" type="hidden" value="<?= $serial_number?>"> 
-		<input id="hidden_is_review" type="hidden" value="<?= $is_review?>"> 
+		<input id="hidden_user_id" type="hidden" value='<s:property value="userId"/>'>
+		<input id="hidden_serial_number" type="hidden" value="<s:property value="serialNumber"/>"> 
+		<input id="hidden_is_review" type="hidden" value="<s:property value="isReview"/>"> 
 	</form>
 	
 	<script>

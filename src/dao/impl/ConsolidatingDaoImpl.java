@@ -8,17 +8,17 @@ import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import dao.ExpaddingDao;
+import dao.ConsolidatingDao;
 
-public class ExpaddingDaoImpl extends BaseDao implements ExpaddingDao {
+public class ConsolidatingDaoImpl extends BaseDao implements ConsolidatingDao {
 
 	@Override
-	public boolean saveExpadding(String userId, String serialNumber,
+	public boolean saveConsolidating(String userId, String serialNumber,
 			String userAnswString) {
 		Session session = getSessionFactory().openSession();
 		String sql = "UPDATE user_vocabulary_submit_record SET date_time ='"+
 				SimpleDateFormat.getDateTimeInstance().format(new Date())+
-				"',content_1='"+userAnswString+"' WHERE user_id='"+userId+
+				"',content_2='"+userAnswString+"' WHERE user_id='"+userId+
 				"' AND serial_number='"+serialNumber+"'";
 		Transaction tx = session.beginTransaction();
 		

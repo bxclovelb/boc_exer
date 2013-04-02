@@ -689,7 +689,6 @@ function nextStep(){
 	}else if(currStep == 4){//转向第四步，其他页面
 		setUserAnswString();
 		saveExpadding();
-		window.location.href = "/voc_exer/index.php/voc_exer_c/show_consolidating/"+userId+"/"+serialNumber;
 	}else if(currStep == 10){//转向第10步（复习）
 		$("#div_spelling").addClass('active');
 		$("#div_direction").html("");
@@ -764,9 +763,11 @@ function saveExpadding(){
 			userAnswString: userAnswString
 		},
 		success:function(data,textStatus){
-			if(!data){
+			if(!data.success){
 				alert("成绩保存失败！请稍后重试。");
 			}
+			
+			window.location.href = "/voc_exer/showConsolidating?userId="+userId+"&serialNumber="+serialNumber;
 		}
 	});
 }
