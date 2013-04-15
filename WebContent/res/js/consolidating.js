@@ -504,7 +504,7 @@ function saveConsolidating(){
 			if(!data.success){
 				alert("成绩保存失败！请稍后重试。");
 			}
-			window.location = "/voc_exer/showFinetuning?userId="+userId+"&serialNumber="+serialNumber;
+			window.location = "/voc_exer/showFineturning?userId="+userId+"&serialNumber="+serialNumber;
 		}
 	});
 }

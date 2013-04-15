@@ -29,7 +29,7 @@ $(function(){
 //获得fineturning答案数组(复习)
 function getFineturningAnswers(type){
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_contents",
+		url:"/voc_exer/index.php/voc_exer_c/get_contents",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -76,16 +76,16 @@ function createFineturningQues(mode){
 	
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 3
 		},
 		success:function(data,textStatus){
 			//加载并解析xml字符串
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var items = null;
 			if(mode == 0){
@@ -227,7 +227,7 @@ function createFineturningQuesReview(mode){
 
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -299,7 +299,7 @@ function createFineturningQuesReview2(mode){
 	
 	//生成题目
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
 		type:"post",
 		dataType:"json",
 		data:{
@@ -420,7 +420,7 @@ function nextStep(){
 		currMode = 1;
 		showRightAnswers();
 	}else if(currStep == 14){//转向第15步，其他页面
-		window.location = "/voc_exe/index.php/voc_exe_c/show_result/"+userId+"/"+serialNumber;
+		window.location = "/voc_exer/index.php/voc_exer_c/show_result/"+userId+"/"+serialNumber;
 	}
 }
 
@@ -446,13 +446,13 @@ function setUserAnswString(){
 //保存答案
 function saveFineturning(){
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/save_fineturning",
+		url:"/voc_exer/saveFineturning",
 		type:"post",
 		dataType:"json",
 		data:{
-			user_id: userId,
-			serial_number: serialNumber,
-			user_answ_string: userAnswString
+			userId: userId,
+			serialNumber: serialNumber,
+			userAnswString: userAnswString
 		},
 		success:function(data,textStatus){
 			if(!data){
@@ -476,5 +476,5 @@ function saveFineturning(){
 }
 
 function turnToResult(){
-	window.location = "/voc_exe/index.php/voc_exe_c/show_result/"+userId+"/"+serialNumber;
+	window.location = "/voc_exer/showResult&userId="+userId+"&serialNumber="+serialNumber;
 }
