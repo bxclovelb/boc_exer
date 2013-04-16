@@ -8,10 +8,10 @@ import service.FineturningService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class FineturningAction extends ActionSupport{
-	private String userId;
-	private String serialNumber;
-	private int isReview;
-	private String userAnswString;
+	private String userId = "";
+	private String serialNumber = "";
+	private int isReview = 0;
+	private String userAnswString = "";
 	
 	private FineturningService fineturningService;
 	
@@ -20,7 +20,6 @@ public class FineturningAction extends ActionSupport{
 	
 	
 	public String showFineturning(){
-		isReview = 0;
 		return SUCCESS;
 	}
 	public String saveFineturning(){
