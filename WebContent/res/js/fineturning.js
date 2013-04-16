@@ -476,5 +476,5 @@ function saveFineturning(){
 }
 
 function turnToResult(){
-	window.location = "/voc_exer/showResult&userId="+userId+"&serialNumber="+serialNumber;
+	window.location = "/voc_exer/showResult?userId="+userId+"&serialNumber="+serialNumber;
 }

@@ -57,6 +57,18 @@
 				/WEB-INF/jsp/voc_exer_result_v.jsp
 			</result>
 		</action>
+		<action name="getContents" class="action.ResultAction" 
+			method="getContents">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
+		<action name="updateScore" class="action.ResultAction" 
+			method="updateScore">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
 	</package>
 	
 </struts>
