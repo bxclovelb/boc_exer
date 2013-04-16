@@ -24,6 +24,12 @@
 				<param name="root">data</param>
 			</result>
 		</action>
+		<action name="getContents" class="action.ExpaddingAction" 
+			method="getContents">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
 		
 		<action name="showConsolidating" class="action.ConsolidatingAction" 
 			method="showConsolidating">

@@ -4,9 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import dao.ExpaddingDao;
+import dao.ResultDao;
 
 public class ExpaddingService {
 	private ExpaddingDao expaddingDao;
+	private ResultDao resultDao;
 	
 	
 	public Map saveExpadding(String userId,
@@ -18,6 +20,16 @@ public class ExpaddingService {
 		
 		return data;
 	}
+	public Map getContents(String userId, String serialNumber) {
+		Object contents = resultDao.getContents(userId,serialNumber);
+		
+		Map<String,Object> data = new HashMap<String,Object>();
+		data.put("contents", contents);
+		
+		return data;
+	}
+	
+	
 	
 	
 
@@ -26,5 +38,11 @@ public class ExpaddingService {
 	}
 	public void setExpaddingDao(ExpaddingDao expaddingDao) {
 		this.expaddingDao = expaddingDao;
+	}
+	public ResultDao getResultDao() {
+		return resultDao;
+	}
+	public void setResultDao(ResultDao resultDao) {
+		this.resultDao = resultDao;
 	}
 }
