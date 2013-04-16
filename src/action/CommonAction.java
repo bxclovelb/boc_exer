@@ -9,6 +9,7 @@ import service.ExpaddingService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class CommonAction extends ActionSupport{
+	private String userId;
 	private String serialNumber;
 	private int part;
 	
@@ -22,9 +23,18 @@ public class CommonAction extends ActionSupport{
 		data = commonService.getXmlMaterial(serialNumber,part);
 		return SUCCESS;
 	}
-	
+	public String getContents(){
+		data = commonService.getContents(userId,serialNumber);
+		return SUCCESS;
+	}
 
 
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 	public String getSerialNumber() {
 		return serialNumber;
 	}

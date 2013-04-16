@@ -22,10 +22,6 @@ public class ResultAction extends ActionSupport{
 	public String showResult(){
 		return SUCCESS;
 	}
-	public String getContents(){
-		data = resultService.getContents(userId,serialNumber);
-		return SUCCESS;
-	}
 	public String updateScore(){
 		data = resultService.updateScore(userId,serialNumber,score);
 		return SUCCESS;

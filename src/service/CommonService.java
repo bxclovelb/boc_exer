@@ -26,7 +26,13 @@ public class CommonService {
 		
 		return data;
 	}
-
+	public Map getContents(String userId, String serialNumber) {
+		Object contents = commonDao.getContents(userId, serialNumber);
+		
+		Map data = new HashMap();
+		data.put("contents", contents);
+		return data;
+	}
 	
 	
 	public CommonDao getCommonDao() {

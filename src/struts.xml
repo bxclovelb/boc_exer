@@ -11,6 +11,12 @@
 				<param name="root">data</param>
 			</result>
 		</action>
+		<action name="getContents" class="action.CommonAction" 
+			method="getContents">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
 	
 		<action name="showExpadding" class="action.ExpaddingAction" 
 			method="showExpadding">
@@ -20,12 +26,6 @@
 		</action>
 		<action name="saveExpadding" class="action.ExpaddingAction" 
 			method="saveExpadding">
-			<result name="success" type="json">
-				<param name="root">data</param>
-			</result>
-		</action>
-		<action name="getContents" class="action.ExpaddingAction" 
-			method="getContents">
 			<result name="success" type="json">
 				<param name="root">data</param>
 			</result>
@@ -61,12 +61,6 @@
 			method="showResult">
 			<result name="success" type="dispatcher">
 				/WEB-INF/jsp/voc_exer_result_v.jsp
-			</result>
-		</action>
-		<action name="getContents" class="action.ResultAction" 
-			method="getContents">
-			<result name="success" type="json">
-				<param name="root">data</param>
 			</result>
 		</action>
 		<action name="updateScore" class="action.ResultAction" 

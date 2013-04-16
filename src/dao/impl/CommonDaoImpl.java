@@ -26,4 +26,21 @@ public class CommonDaoImpl extends BaseDao implements CommonDao {
 		
 		return xml;
 	}
+	
+	@Override
+	public Object getContents(String userId, String serialNumber) {
+		String sql = "SELECT content_1,content_2,content_3"
+					+" FROM user_vocabulary_submit_record WHERE user_id='"
+					+userId+"' AND serial_number='"+serialNumber+"'";
+		Session session = getSessionFactory().openSession();
+		SQLQuery query = session.createSQLQuery(sql);
+		
+		List contens = query.list();
+		
+		session.close();
+		
+		System.out.println(contens.get(0));
+		
+		return contens.get(0);
+	}
 }

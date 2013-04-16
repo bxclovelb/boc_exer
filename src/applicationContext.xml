@@ -47,7 +47,6 @@
 	</bean>
 	<bean id="expaddingService" class="service.ExpaddingService">
 		<property name="expaddingDao" ref="expaddingDao"></property>
-		<property name="resultDao" ref="resultDao"></property>
 	</bean>
 	<bean id="expaddingAction" class="action.ExpaddingAction">
 		<property name="expaddingService" ref="expaddingService"></property>

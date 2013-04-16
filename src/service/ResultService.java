@@ -11,13 +11,6 @@ public class ResultService {
 	
 	
 
-	public Map getContents(String userId, String serialNumber) {
-		Object contents = resultDao.getContents(userId, serialNumber);
-		
-		Map data = new HashMap();
-		data.put("contents", contents);
-		return data;
-	}
 	public Map updateScore(String userId, String serialNumber,
 			int score) {
 		boolean success = resultDao.updateScore(userId, serialNumber,score);

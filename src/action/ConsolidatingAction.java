@@ -8,10 +8,10 @@ import service.ExpaddingService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ConsolidatingAction extends ActionSupport{
-	private String userId;
-	private String serialNumber;
-	private int isReview;
-	private String userAnswString;
+	private String userId = "";
+	private String serialNumber = "";
+	private int isReview = 0;
+	private String userAnswString = "";
 	
 	private ConsolidatingService consolidatingService;
 	
@@ -20,7 +20,6 @@ public class ConsolidatingAction extends ActionSupport{
 	
 	
 	public String showConsolidating(){
-		isReview = 0;
 		return SUCCESS;
 	}
 	public String saveConsolidating(){

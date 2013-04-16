@@ -26,10 +26,6 @@ public class ExpaddingAction extends ActionSupport{
 		data = expaddingService.saveExpadding(userId,serialNumber,userAnswString);
 		return SUCCESS;
 	}
-	public String getContents(){
-		data = expaddingService.getContents(userId,serialNumber);
-		return SUCCESS;
-	}
 
 
 	public String getUserId() {
