@@ -9,9 +9,9 @@ import service.ResultService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ResultAction extends ActionSupport{
-	private String userId;
-	private String serialNumber;
-	private int score;
+	private String userId = "";
+	private String serialNumber = "";
+	private int score = 0;
 	
 	private ResultService resultService;
 	

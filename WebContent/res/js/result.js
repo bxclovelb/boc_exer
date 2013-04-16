@@ -232,7 +232,7 @@ function setResultInfo(){
 							score: score
 						},
 						success:function(data,textStatus){
-							if(!data){
+							if(!data.success){
 								alert("成绩保存失败！请稍后重试。");
 							}
 						}
