@@ -7,11 +7,11 @@ import service.ExpaddingService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ExpaddingAction extends ActionSupport{
-	private String userId;
-	private String serialNumber;
-	private int isReview;
-	private String userAnswString;
-	private int part;
+	private String userId = "";
+	private String serialNumber = "";
+	private int isReview = 0;
+	private String userAnswString = "";
+	private int part = 1;
 	
 	private ExpaddingService expaddingService;
 	

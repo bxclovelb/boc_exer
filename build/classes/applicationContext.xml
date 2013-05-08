@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:tx="http://www.springframework.org/schema/tx"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver">
+	  	</property>
+	  	<property name="url" value="jdbc:mysql://localhost:3306/genway_w?characterEncoding=utf-8">
+	  	</property>
+	  	<property name="username" value="bingoenglish">
+	  	</property>
+	  	<property name="password" value="bingoenglish">
+	  	</property>
+	</bean>
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- <property name="mappingResources">
+			<list>
+				<value></value>
+			</list>
+		</property> -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="commonDao" class="dao.impl.CommonDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="commonService" class="service.CommonService">
+		<property name="commonDao" ref="commonDao"></property>
+	</bean>
+	<bean id="commonAction" class="action.CommonAction">
+		<property name="commonService" ref="commonService"></property>
+	</bean>
+	
+	<bean id="expaddingDao" class="dao.impl.ExpaddingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="expaddingService" class="service.ExpaddingService">
+		<property name="expaddingDao" ref="expaddingDao"></property>
+	</bean>
+	<bean id="expaddingAction" class="action.ExpaddingAction">
+		<property name="expaddingService" ref="expaddingService"></property>
+	</bean>
+	
+	<bean id="consolidatingDao" class="dao.impl.ConsolidatingDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="consolidatingService" class="service.ConsolidatingService">
+		<property name="consolidatingDao" ref="consolidatingDao"></property>
+	</bean>
+	<bean id="consolidatingAction" class="action.ConsolidatingAction">
+		<property name="consolidatingService" ref="consolidatingService"></property>
+	</bean>
+</beans>

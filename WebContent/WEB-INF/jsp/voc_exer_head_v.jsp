@@ -2,7 +2,7 @@
 <%@taglib prefix="s" uri="/struts-tags"%>
 <div id="div_head" class="div-head"
 	style="color: white; font-size: 40pt; padding: 1%; height: auto;">
-	<img src="/voc_exer/res/img/head.png"> <span style="margin-left: 2%">冰果英语词汇增强练习</span>
+	<img src="/voc_exer/res/img/head.png"> <span style="margin-left: 2%">英语词汇增强练习</span>
 </div>
 <div
 	style="background-color: #54aff7; height: 5px; width: 100%"></div>
