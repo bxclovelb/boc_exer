@@ -37,6 +37,19 @@
 				<param name="root">data</param>
 			</result>
 		</action>
+		
+		<action name="showFineturning" class="action.FineturningAction" 
+			method="showFineturning">
+			<result name="success" type="dispatcher">
+				/WEB-INF/jsp/voc_exer_fineturning_v.jsp
+			</result>
+		</action>
+		<action name="saveFineturning" class="action.FineturningAction" 
+			method="saveFineturning">
+			<result name="success" type="json">
+				<param name="root">data</param>
+			</result>
+		</action>
 	</package>
 	
 </struts>

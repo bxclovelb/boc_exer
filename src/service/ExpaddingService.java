@@ -11,7 +11,16 @@ public class ExpaddingService {
 	
 	public Map saveExpadding(String userId,
 			String serialNumber, String userAnswString) {
-		boolean success = expaddingDao.saveExpadding(userId,serialNumber,userAnswString);
+		boolean exist = expaddingDao.exist(userId,serialNumber);
+		
+		boolean success = false;
+		if( ! exist ){
+			success = expaddingDao.createRecord(userId,serialNumber);
+		}
+		
+		if( success ){
+			success = expaddingDao.saveExpadding(userId,serialNumber,userAnswString);
+		}
 		
 		Map<String,Boolean> data = new HashMap<String,Boolean>();
 		data.put("success", success);

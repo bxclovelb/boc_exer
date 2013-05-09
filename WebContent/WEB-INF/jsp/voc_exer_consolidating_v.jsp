@@ -8,12 +8,11 @@
 <script src="/voc_exer/res/js/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/jquery-ui-1.9.2.custom.min.js"
 	type="text/javascript"></script>
-<script src="/voc_exer/res/js/jwplayer.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/consolidating.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/commons.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/turner.js" type="text/javascript"></script>
 
-<link href="/voc_exer/res/css/jjquery-ui-1.10.1.custom.min.css"
+<link href="/voc_exer/res/css/jquery-ui-1.10.1.custom.min.css"
 	rel="stylesheet">
 <link href="/voc_exer/res/css/bootstrap.min.css" rel="stylesheet">
 <link href="/voc_exer/res/css/consolidating.css" rel="stylesheet">

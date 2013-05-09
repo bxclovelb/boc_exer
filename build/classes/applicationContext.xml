@@ -61,4 +61,14 @@
 	<bean id="consolidatingAction" class="action.ConsolidatingAction">
 		<property name="consolidatingService" ref="consolidatingService"></property>
 	</bean>
+	
+	<bean id="fineturningDao" class="dao.impl.FineturningDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="fineturningService" class="service.FineturningService">
+		<property name="fineturningDao" ref="fineturningDao"></property>
+	</bean>
+	<bean id="fineturningAction" class="action.FineturningAction">
+		<property name="fineturningService" ref="fineturningService"></property>
+	</bean>
 </beans>

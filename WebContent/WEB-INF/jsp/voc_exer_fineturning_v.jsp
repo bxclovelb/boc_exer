@@ -8,7 +8,6 @@
 <script src="/voc_exer/res/js/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/jquery-ui-1.9.2.custom.min.js"
 	type="text/javascript"></script>
-<script src="/voc_exer/res/js/jwplayer.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/fineturning.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/commons.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/turner.js" type="text/javascript"></script>
@@ -26,27 +25,28 @@
 </head>
 <body>
 	<!-- navbar -->
-		<?php include 'voc_exer_navbar_v.php'; ?>
+		<s:include value="voc_exer_navbar_v.jsp"></s:include>
 	<!-- navbar end -->
 	
 	<div class="container"
 		style="margin-top: 40px; z-index: 1; border: 1px solid gray;">
 		
 		<!-- include header start -->
-		<?php include 'voc_exer_head_v.php'; ?>
+		<s:include value="voc_exer_head_v.jsp"></s:include>
 		<!-- include header end -->
 		
 		<div class="row-fluid div-body" id="div_body">
-			<?php if ($is_review != 1): ?>
+			<s:if test="$is_review != 1">
 				<div id="div_finetuning_head" class="div-finetuning-head">
 					<input type="button" value="重置" class="btn" onclick="reset(currStep);">
 				</div>
-			<?php else:?>
+			</s:if>
+			<s:else>
 				<div id="div_finetuning_head" class="div-finetuning-head">
 					<input id="button_right_answer" type="button" value="查看正确答案" class="btn" style="float:right;border:1px solid gray;height:29px" disabled="disabled" onclick="showRightAnswers();">
 					<input id="button_user_answer" type="button" value="查看我的答案" class="btn" style="float:right;margin-right:5px;border:1px solid gray;height:29px" onclick="showUserAnswers();">
 				</div>
-			<?php endif;?>
+			</s:else>
 				
 			<!-- finetuning start -->
 			<div id="div_finetuning" class="active">
@@ -60,9 +60,9 @@
 		</div>
 	</div>
 	<form>
-		<input id="hidden_user_id" type="hidden" value="<?= $user_id?>">
-		<input id="hidden_serial_number" type="hidden" value="<?= $serial_number?>">
-		<input id="hidden_is_review" type="hidden" value="<?= $is_review?>">  
+		<input id="hidden_user_id" type="hidden" value='<s:property value="userId" />'>
+		<input id="hidden_serial_number" type="hidden" value="<s:property value="serialNumber" />">
+		<input id="hidden_is_review" type="hidden" value="<s:property value="isReview" />">  
 	</form>
 	<div id="div_message_success" class="message" style="padding-top:30px">
 		恭喜您，已经完成本次词汇训练并提交成功，接下来请看您的答题结果！
