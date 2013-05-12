@@ -29,12 +29,12 @@ $(function(){
 //获得fineturning答案数组(复习)
 function getFineturningAnswers(type){
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_contents",
+		url:"/voc_exer/getContents",
 		type:"post",
 		dataType:"json",
 		data:{
-			user_id: userId,
-			serial_number: serialNumber
+			userId: userId,
+			serialNumber: serialNumber
 		},
 		success:function(data,textStatus){
 			var content3 = data.content_3;
@@ -227,16 +227,16 @@ function createFineturningQuesReview(mode){
 
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 3
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var items = null;
 			if(mode == 0){
@@ -299,16 +299,16 @@ function createFineturningQuesReview2(mode){
 	
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 3
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var items = null;
 			if(mode == 0){
@@ -420,7 +420,7 @@ function nextStep(){
 		currMode = 1;
 		showRightAnswers();
 	}else if(currStep == 14){//转向第15步，其他页面
-		window.location = "/voc_exer/index.php/voc_exer_c/show_result/"+userId+"/"+serialNumber;
+		window.location = "/voc_exer/showResult?userId="+userId+"&serialNumber="+serialNumber;
 	}
 }
 

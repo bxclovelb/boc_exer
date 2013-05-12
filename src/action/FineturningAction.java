@@ -20,7 +20,6 @@ public class FineturningAction extends ActionSupport{
 	
 	
 	public String showFineturning(){
-		isReview = 0;
 		return SUCCESS;
 	}
 	public String saveFineturning(){

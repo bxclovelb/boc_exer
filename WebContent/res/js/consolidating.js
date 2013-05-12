@@ -466,7 +466,7 @@ function nextStep(){
 		currMode = 1;
 		showRightAnswers();
 	}else if(currStep == 14){//转向第15步，其他页面
-		window.location = "/voc_exer/showFinetuning?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1";
+		window.location = "/voc_exer/showFineturning?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1";
 	}
 }
 

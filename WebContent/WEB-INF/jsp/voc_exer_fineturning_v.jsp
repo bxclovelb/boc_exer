@@ -36,7 +36,7 @@
 		<!-- include header end -->
 		
 		<div class="row-fluid div-body" id="div_body">
-			<s:if test="$is_review != 1">
+			<s:if test="isReview != 1">
 				<div id="div_finetuning_head" class="div-finetuning-head">
 					<input type="button" value="重置" class="btn" onclick="reset(currStep);">
 				</div>
