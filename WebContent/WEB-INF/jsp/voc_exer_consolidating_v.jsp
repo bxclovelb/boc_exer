@@ -36,7 +36,7 @@
 		<!-- include header end -->
 		
 		<div class="row-fluid div-body" id="div_body">
-		<s:if test="isReview == 0" >
+		<s:if test="isReview != 1" >
 			<div id="div_consolidating_head" class="div-consolidating-head">
 				<input type="button" value="重置" class="btn" style="height:28px" onclick="reset(currStep);">
 			</div>

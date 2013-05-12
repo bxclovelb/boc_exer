@@ -17,7 +17,7 @@ $(function(){
 	userId = $("#hidden_user_id").val();
 	serialNumber = $("#hidden_serial_number").val();
 	isReview = $("#hidden_is_review").val(); 
-
+	
 	if(isReview == "1"){
 		currStep = 12;
 		showRightAnswers();
@@ -29,12 +29,12 @@ $(function(){
 //获得consolidating答案数组(复习)
 function getConsolidatingAnswers(type){
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_contents",
+		url:"/voc_exer/getContents",
 		type:"post",
 		dataType:"json",
 		data:{
-			user_id: userId,
-			serial_number: serialNumber
+			userId: userId,
+			serialNumber: serialNumber
 		},
 		success:function(data,textStatus){
 			var content2 = data.content_2;
@@ -249,16 +249,16 @@ function createFrequentlyQuesReview(mode){
 
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 2
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var items = null;
 			if(mode == 0){
@@ -327,16 +327,16 @@ function createFrequentlyQuesReview2(mode){
 
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 2
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var items = null;
 			var items = null;
@@ -466,7 +466,7 @@ function nextStep(){
 		currMode = 1;
 		showRightAnswers();
 	}else if(currStep == 14){//转向第15步，其他页面
-		window.location = "/voc_exer/index.php/voc_exer_c/show_finetuning/"+userId+"/"+serialNumber+"/1";
+		window.location = "/voc_exer/showFinetuning?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1";
 	}
 }
 

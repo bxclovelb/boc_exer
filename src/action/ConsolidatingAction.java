@@ -20,7 +20,6 @@ public class ConsolidatingAction extends ActionSupport{
 	
 	
 	public String showConsolidating(){
-		isReview = 0;
 		return SUCCESS;
 	}
 	public String saveConsolidating(){
