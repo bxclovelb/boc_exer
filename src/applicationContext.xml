@@ -71,4 +71,14 @@
 	<bean id="fineturningAction" class="action.FineturningAction">
 		<property name="fineturningService" ref="fineturningService"></property>
 	</bean>
+	
+	<bean id="resultDao" class="dao.impl.ResultDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="resultService" class="service.ResultService">
+		<property name="resultDao" ref="resultDao"></property>
+	</bean>
+	<bean id="resultAction" class="action.ResultAction">
+		<property name="resultService" ref="resultService"></property>
+	</bean>
 </beans>

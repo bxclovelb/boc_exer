@@ -13,7 +13,7 @@ public class ExpaddingService {
 			String serialNumber, String userAnswString) {
 		boolean exist = expaddingDao.exist(userId,serialNumber);
 		
-		boolean success = false;
+		boolean success = true;
 		if( ! exist ){
 			success = expaddingDao.createRecord(userId,serialNumber);
 		}

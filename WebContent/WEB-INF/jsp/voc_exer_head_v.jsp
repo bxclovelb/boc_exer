@@ -8,9 +8,9 @@
 	style="background-color: #54aff7; height: 5px; width: 100%"></div>
 <div style="float: right; margin: 5px">
 	<div id="div_next" style="float: left; width: 50px; margin-right: 30px">
-		<a href="###" onclick="nextStep();"> <img
+		<a href="javascript:void(0);" onclick="nextStep();"> <img
 			src="/voc_exer/res/img/next.png" style="width: 50px; height: 50px">
-		</a> <a href="###" style="margin-left: 3px"
+		</a> <a href="javascript:void(0);" style="margin-left: 3px"
 			onclick="nextStep();">下一步</a>
 	</div>
 	<div style="float: left; width: 50px; margin-right: 30px">

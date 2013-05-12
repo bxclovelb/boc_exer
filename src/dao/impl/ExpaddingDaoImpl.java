@@ -19,6 +19,7 @@ public class ExpaddingDaoImpl extends BaseDao implements ExpaddingDao {
 				SimpleDateFormat.getDateTimeInstance().format(new Date())+
 				"',content_1='"+userAnswString+"' WHERE user_id='"+userId+
 				"' AND serial_number='"+serialNumber+"'";
+		System.out.println(sql);
 		Transaction tx = session.beginTransaction();
 		
 		int count = session.createSQLQuery(sql).executeUpdate();
@@ -41,7 +42,7 @@ public class ExpaddingDaoImpl extends BaseDao implements ExpaddingDao {
 		SQLQuery query = session.createSQLQuery(sql);
 		
 		int count = Integer.parseInt(query.list().get(0).toString());
-		
+		System.out.println(count);
 		session.close();
 		
 		if(count == 1){

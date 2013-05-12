@@ -17,20 +17,20 @@ $(function(){
 function setDirection(){
 	//设置direction
 	$("#div_direction").html("");
-	$("#div_direction").append("<div style='float:left'><a href='###' onclick='review();'><img src='/voc_exe/res/img/review.png'/></a></div>");
-	$("#div_direction").append("<div style='float:left;margin-left:20px'><a href='###' onclick='showWaitMessage();'><img src='/voc_exe/res/img/vocabulary.png'/></a></div>");
+	$("#div_direction").append("<div style='float:left'><a href='###' onclick='review();'><img src='/voc_exer/res/img/review.png'/></a></div>");
+	$("#div_direction").append("<div style='float:left;margin-left:20px'><a href='###' onclick='showWaitMessage();'><img src='/voc_exer/res/img/vocabulary.png'/></a></div>");
 }
 
 //设置结果信息
 function setResultInfo(){
 	//访问数据库获得答案信息
 	$.ajax({
-		url:"/voc_exe/index.php/voc_exe_c/get_contents",
+		url:"/voc_exer/getContents",
 		type:"post",
 		dataType:"json",
 		data:{
-			user_id: userId,
-			serial_number: serialNumber
+			userId: userId,
+			serialNumber: serialNumber
 		},
 		success:function(data,textStatus){
 			//获得三个xml字符串
@@ -39,16 +39,16 @@ function setResultInfo(){
 			var content3 = data.content_3;
 			
 			$.ajax({
-				url:"/voc_exe/index.php/voc_exe_c/get_xml_material",
+				url:"/voc_exer/getXmlMaterial",
 				type:"post",
 				dataType:"json",
 				data:{
-					serial_number:serialNumber,
+					serialNumber:serialNumber,
 					part: 1
 				},
 				success:function(data,textStatus){
 					//加载并解析第一部份xml字符串
-					var xmlDocPart1 = parseXmlString(data);
+					var xmlDocPart1 = parseXmlString(data.xml);
 					
 					//词义选择部分
 					/*计数器*/
@@ -223,16 +223,16 @@ function setResultInfo(){
 					//更新本次所得分数
 					var score = Math.round((matchingRightCount*100/matchingCount + spellingRightCount*100/spellingCount + completionRightCount*100/completionCount + frequentlyRightCount*100/12 + partnershipRightCount*100/10) * 100 / 500);
 					$.ajax({
-						url:"/voc_exe/index.php/voc_exe_c/update_score",
+						url:"/voc_exer/updateScore",
 						type:"post",
 						dataType:"json",
 						data:{
-							user_id: userId,
-							serial_number: serialNumber,
+							userId: userId,
+							serialNumber: serialNumber,
 							score: score
 						},
 						success:function(data,textStatus){
-							if(!data){
+							if(!data.success){
 								alert("成绩保存失败！请稍后重试。");
 							}
 						}
@@ -275,17 +275,17 @@ function recordWrongWord(word,type){
 //转向错误单词相应页面
 function turnToWrongWord(type){
 	if(type == 0){
-		window.location = "/voc_exe/index.php/voc_exe_c/index/"+userId+"/"+serialNumber+"/1/1";
+		window.location = "/voc_exer/showExpadding?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1&part=1";
 	}else if(type == 1){
-		window.location = "/voc_exe/index.php/voc_exe_c/index/"+userId+"/"+serialNumber+"/1/2";
+		window.location = "/voc_exer/showExpadding?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1&part=2";
 	}else if(type == 2){
-		window.location = "/voc_exe/index.php/voc_exe_c/index/"+userId+"/"+serialNumber+"/1/3";
+		window.location = "/voc_exer/showExpadding?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1&part=3";
 	}
 }
 
 //进入复习模式
 function review(){
-	window.location = "/voc_exe/index.php/voc_exe_c/index/"+userId+"/"+serialNumber+"/1";
+	window.location = "/voc_exer/showExpadding?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1&part=1";
 }
 
 //转发器
@@ -294,7 +294,7 @@ function nextStep(){
 	
 	//显示相应页面
 	if(currStep == 9){//转向第九步（复习模式），其他页面
-		window.location = "/voc_exe/index.php/voc_exe_c/index/"+userId+"/"+serialNumber+"/1";
+		window.location = "/voc_exer/showExpadding?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1&part=1";
 	}
 }
 

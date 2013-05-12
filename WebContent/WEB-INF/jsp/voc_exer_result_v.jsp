@@ -8,7 +8,6 @@
 <script src="/voc_exer/res/js/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/jquery-ui-1.9.2.custom.min.js"
 	type="text/javascript"></script>
-<script src="/voc_exer/res/js/jwplayer.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/result.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/commons.js" type="text/javascript"></script>
 <script src="/voc_exer/res/js/turner.js" type="text/javascript"></script>
@@ -22,14 +21,14 @@
 </head>
 <body>
 	<!-- navbar -->
-		<?php include 'voc_exer_navbar_v.php'; ?>
+		<s:include value="voc_exer_navbar_v.jsp"></s:include>
 	<!-- navbar end -->
 
 	<div class="container"
 		style="margin-top: 40px; z-index: 1; border: 1px solid gray;">
 		
 		<!-- include header start -->
-		<?php include 'voc_exer_head_v.php'; ?>
+		<s:include value="voc_exer_head_v.jsp"></s:include>
 		<!-- include header end -->
 		
 		<div class="row-fluid div-body" id="div_body">
@@ -81,8 +80,8 @@
 		</div>
 	</div>
 	<form>
-		<input id="hidden_user_id" type="hidden" value="<?= $user_id?>">
-		<input id="hidden_serial_number" type="hidden" value="<?= $serial_number?>"> 
+		<input id="hidden_user_id" type="hidden" value='<s:property value="userId"/>'>
+		<input id="hidden_serial_number" type="hidden" value="<s:property value="serialNumber"/>"> 
 		<div id="div_mess_wait" class="message">该功能尚未上线，敬请期待！</div>
 	</form>
 </body>

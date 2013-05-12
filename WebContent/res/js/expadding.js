@@ -60,12 +60,12 @@ function initPlayer(){
 //获得expadding答案数组(复习)
 function getExpaddingAnswers(type){
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_contents",
+		url:"/voc_exer/getContents",
 		type:"post",
 		dataType:"json",
 		data:{
-			user_id: userId,
-			serial_number: serialNumber
+			userId: userId,
+			serialNumber: serialNumber
 		},
 		success:function(data,textStatus){
 			var content1 = data.content_1;
@@ -318,16 +318,16 @@ function showSpellingAnsws(){
 	
 	//生成题目
 	$.ajax({
-		url:"/voc_exer/index.php/voc_exer_c/get_xml_material",
+		url:"/voc_exer/getXmlMaterial",
 		type:"post",
 		dataType:"json",
 		data:{
-			serial_number:serialNumber,
+			serialNumber:serialNumber,
 			part: 1
 		},
 		success:function(data,textStatus){
 			//加载并解析xml文件
-			var xmlDoc = parseXmlString(data);
+			var xmlDoc = parseXmlString(data.xml);
 			//获得题目数组
 			var spellingItems = xmlDoc.getElementsByTagName("spelling")[0].getElementsByTagName("items")[0].getElementsByTagName("item");
 			//显示
@@ -354,7 +354,7 @@ function showSpellingAnsws(){
 					}
 				}else{
 					//添加到用户答案
-					$("#div_user_choosed").append("<div style='color:red;margin:10px;font-size:24px;line-height:24px'>未选</div>");
+					$("#div_user_choosed").append("<div style='color:red;margin:10px;font-size:24px;line-height:24px'>未写</div>");
 					//添加到正确答案
 					var divRightAnswer = getRightAnswerDiv(false,answer,filename);
 					$("#div_right_answer").append(divRightAnswer);
@@ -704,7 +704,7 @@ function nextStep(){
 		
 		getExpaddingAnswers(2);
 	}else if(currStep == 12){//转向第12步（复习） ,转向其他页面
-		window.location = "/voc_exer/index.php/voc_exer_c/show_consolidating/"+userId+"/"+serialNumber+"/1";
+		window.location = "/voc_exer/showConsolidating?userId="+userId+"&serialNumber="+serialNumber+"&isReview=1";
 	}
 }
 
