@@ -3,7 +3,7 @@
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<img src="/voc_exer/res/images/bingo.png" style="float: left"> <a
-			class="brand" href="javascript:void(0);">英语</a>
+			class="brand" href="javascript:void(0);">英语词汇本</a>
 		<ul class="nav">
 			<li><a href="javascript:void(0);" onclick="goToVocInfo();">个人词汇信息</a>
 			</li>
@@ -14,5 +14,8 @@
 			<li class="active"><a id="a_voc_exer" href="javascript:void(0);">词汇练习</a>
 			</li>
 		</ul>
+		<div style="float:right;margin:10px 10px">
+			<a href="javascript:void(0);" onclick="exit();">退出</a>
+		</div>
 	</div>
 </div>

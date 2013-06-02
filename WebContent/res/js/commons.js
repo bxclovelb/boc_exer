@@ -95,3 +95,15 @@ function playMp3(filename){
 function getXmlDoc(serialNumber,part){
 	
 }
+
+function exit(){
+	$.getJSON("/voc_info/logout",
+		function(data){
+		if(!data.success){
+			alert("未知错误！");
+		}else{
+			alert("退出成功！");
+			window.location = "/voc_info/showLogin";
+		}
+	});
+}
